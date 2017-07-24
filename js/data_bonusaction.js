@@ -13,6 +13,26 @@ data_bonusaction = [
         ]
     },
     {
+        title: "Overrun",
+        icon: "mailed-fist",
+        subtitle: "Move through an opponent",
+        description: "Use brute force to move through an opponent",
+        reference: "DMG, pg. 272.",
+        bullets: [
+            "See under \"Action\" for more information."
+        ]
+    },
+    {
+        title: "Tumble",
+        icon: "acrobatic",
+        subtitle: "Move through an opponent",
+        description: "Use speed and agility to move through an opponent",
+        reference: "DMG, pg. 272.",
+        bullets: [
+            "See under \"Action\" for more information."
+        ]
+    },
+    {
         title: "Cast a spell",
         icon: "magic-swirl",
         subtitle: "Cast time of 1 bonus action",

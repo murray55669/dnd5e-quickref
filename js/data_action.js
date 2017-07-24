@@ -8,9 +8,10 @@ data_action = [
         bullets: [
             "Certain features, such as the <i>Extra Attack</i> feature of the fighter, allow you to make more than one attack with this action. Each of these attacks is a separate roll and may target different creatures. You may move in between these attacks.",
             "When you attack with a light melee weapon, you can use a bonus action to attack with your other hand (see the <i>Offhand attack</i> bonus action).",
-            "You may replace one of your melee attacks with a <i>Grapple</i> or a <i>Shove</i>.",
+            "You may replace one of your melee attacks with a <i>Grapple</i>, a <i>Shove</i>, a <i>Disarm</i>, a <i>Climb onto a Bigger Creature</i>, or a <i>Dislodge Smaller Creature</i>",
             "Some conditions give advantage on the attack: attacks against blinded, paralyzed, petrified, restrained, stunned, or unconscious targets; melee attacks against prone targets; attacks by invisible or hidden attackers.",
-            "Some conditions give disadvantage on the attack: attacks against invisible or hidden targets; ranged attacks against prone targets; attacks by blinded, frightened, poisoned, or restrained attackers."
+            "Some conditions give disadvantage on the attack: attacks against invisible or hidden targets; ranged attacks against prone targets; attacks by blinded, frightened, poisoned, or restrained attackers.",
+            "When a creature makes a melee attack, it can also mark its target. Until the end of the attacker's next turn, any opportunity attack it makes against the marked target has advantage. The opportunity attack doesn't expend the attacker's reaction. The attacker is limited to one opportunity attack per turn, and must be able to take reactions."
         ]
     },
     {
@@ -27,6 +28,21 @@ data_action = [
         ]
     },
     {
+        title: "Climb onto Bigger Creature",
+        icon: "giant",
+        subtitle: "Special melee attack",
+        description: "Attempt to climb onto another creature, as an alternative to grappling",
+        reference: "DMG, pg. 271.",
+        bullets: [
+            "You can use the <i>Attack</i> action to make a special melee attack, to climb onto a bigger creature. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
+            "Your target must be more than one size larger than you. An area of the creature capable of supporting you must be within your reach.",
+            "Using at least one free hand, you try to gain purchase one the target by making a Strength (Athletics) or Dexterity (Acrobatics) check contested by the target's Dexterity (Acrobatics) check.",
+            "If you succeed, you move into the target's space and cling to it's body. While in the target's space, you move with the target and have advantage on attack rolls against it.",
+            "You can move around in the target's space, treating the space as difficult terrain.",
+            "The target's ability to attack you at any location on its body is left to the DM's discretion."
+        ]
+    },
+    {
         title: "Shove",
         icon: "hand",
         subtitle: "Special melee attack",
@@ -37,6 +53,18 @@ data_action = [
             "The target of your shove must be no more than one size larger than you, and it must be within your reach.",
             "You make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
             "If you win the contest, you either knock the target prone or push it 5 feet away from you."
+        ]
+    },
+    {
+        title: "Disarm",
+        icon: "drop-weapon",
+        subtitle: "Special melee attack",
+        description: "Knock an item from a creature's grasp",
+        reference: "DMG, pg. 271.",
+        bullets: [
+            "Using the <i>Attack</i> action, you can make a special attack to disarm a creature. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
+            "You make an attack roll contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use) to knock an item from the target's grasp. You have disadvantage on the attack if the target is holding the item with two or more hands. The target has advantage on its ability check if it is larger than you, or disadvantage if it is smaller.",
+            "If you win the contest, your attack does no damage or other ill effect, but the target drops the item."
         ]
     },
     {
@@ -60,6 +88,31 @@ data_action = [
         reference: "PHB, pg. 192.",
         bullets: [
             "The increase equals your speed, after applying any modifiers."
+        ]
+    },
+    {
+        title: "Overrun",
+        icon: "mailed-fist",
+        subtitle: "Move through an opponent",
+        description: "Use brute force to move through an opponent",
+        reference: "DMG, pg. 272.",
+        bullets: [
+            "To move through a hostile creature's space, you can make a Strength (Athletics) check contested by the creature's Strength (Athletics) check.",
+            "You have advantage on your check if you are larger than the hostile creature, or disadvantage if you are smaller.",
+            "If you win the contest, you can move through the hostile creature's space once this turn.",
+            "This can be done as an action or bonus action."
+        ]
+    },
+    {
+        title: "Tumble",
+        icon: "acrobatic",
+        subtitle: "Move through an opponent",
+        description: "Use speed and agility to move through an opponent",
+        reference: "DMG, pg. 272.",
+        bullets: [
+            "To move through a hostile creature's space, you can make a Dexterity (Acrobatics) check contested by the creature's Dexterity (Acrobatics) check.",
+            "If you win the contest, you can move through the hostile creature's space once this turn.",
+            "This can be done as an action or bonus action."
         ]
     },
     {
@@ -91,6 +144,16 @@ data_action = [
         bullets: [
             "To escape a grapple, you must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check contested by the grappler's Strength (Athletics) check.",
             "Escaping other conditions that restrain you (such as manacles) may require a Dexterity or Strength check, as specified by the condition."
+        ]
+    },
+    {
+        title: "Dislodge Smaller Creature",
+        icon: "muscle-up",
+        subtitle: "",
+        description: "Attempt to dislodge a creature currently clinging to you",
+        reference: "DMG, pg. 271.",
+        bullets: [
+            "To dislodge a smaller creature clinging to you, you must succeed on a Strength (Athletics) check contested by the smaller creature's Strength (Athletics) or Acrobatics (Dexterity) check (smaller creature's choice)."
         ]
     },
     {
